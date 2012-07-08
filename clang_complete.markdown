@@ -6,7 +6,7 @@
 In this mode, each time we trigger a completion ([Ctrl_X Ctrl_U](http://vimdoc.sourceforge.net/htmldoc/insert.html#i_CTRL-X_CTRL-U)) in vim, the plugin will invoke the clang executable on the specified position in source code, then read and parse the executable's output to use as the candidates list.
 
 ## 2. library mode
-In this mode, the plugin will run a python script to invoke the libclang library to get the candidates list. As [the author indicates](https://github.com/Rip-Rip/clang_complete/wiki), the libclang library employs cache mechanism and runs much faster than the executable mode. So, it's the recommended way to use.
+In this mode, the plugin will run a python script to invoke the libclang library to get the candidates list. As [the author indicates](https://github.com/Rip-Rip/clang_complete/wiki), the libclang library employs cache mechanism and runs much faster than the executable mode. I also observed another difference. On windows, the clang.exe may fail to compile our source code and returns a non-0 exit code. In this case, the plugin only returns an empty list, even though it may be able to produce a correct list. But the library mode doesn't have this limitation. So, it's the recommended way to use.
 
 # how to use it
 
