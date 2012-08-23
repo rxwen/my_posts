@@ -10,4 +10,10 @@ As the precedent document illustrates, to enable kgdb for a kernel, we need to:
 - Provide a kgdb I/O driver
 - Set linux boot argument to instruct linux kernel use our kgdb I/O driver
 
+# How to implement a kgdb I/O driver
 
+# How to debug if there is only one serial port
+
+# How to debug linux initialization code
+
+# How to debug module
