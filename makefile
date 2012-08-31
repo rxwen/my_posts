@@ -1,2 +1,3 @@
 all:
-	markdown_py -f out.html < clang_complete.markdown
+	markdown_py -f out.html < debug_linux_kernel_with_kgdb.markdown
+	firefox out.html
