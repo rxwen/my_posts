@@ -1,6 +1,10 @@
 [Widget](http://developer.android.com/guide/topics/appwidgets/index.html) is a convienent feature in android that gives users quick access to frequently used application functions. A example is the power control widget. It helps us quickly toggling accessories such as WIFI, GPS power to conserve battery, without tedious operations.
 
+![android power control widget](http://farm9.staticflickr.com/8195/8107979443_290c3a8d90.jpg)
+
 When we plan to provide widget in our own application, an important thing to think about is the communication model between the widget and application. In a simiplified manner, the commucation model is shown below.
+
+![communication model diagram](http://farm9.staticflickr.com/8054/8108016338_a5250fc0c8_b.jpg)
 
 The widget is shown on home screen(which is a [AppWidgetHost](https://developer.android.com/reference/android/appwidget/AppWidgetHost.html)), and user can interact(e.g., touch) with the widget. The result of the interaction is either showing an activity to the user to display more information, or controlling the state of a background service. Meanwhile, the background service may proactively update the widget to inform user current state. The communication model is bidirectional.
 
