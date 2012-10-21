@@ -1,0 +1,20 @@
+digraph G {
+    bgcolor=white;
+    pad=0.5;/* the spaces appended to the edge of the drawing */
+    ranksep="1.1 equally";
+    nodesep="1.0 equally";
+    rankdir=LR;
+    //splines=""|true|false|ortho;
+
+    node[shape="record"];
+
+    {rank=same; widget;}
+    {rank=same; activity; provider;}
+    {rank=same; service;}
+
+    widget -> activity [label="launch"];
+    widget -> provider [label="control"];
+    provider -> widget [label="update"];
+    provider -> service [dir="both"];
+
+}
