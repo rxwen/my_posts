@@ -113,3 +113,7 @@ To update a widget from service, we can send a broadcast message from the backgr
 android [WeatherListWidget](https://android.googlesource.com/platform/development/+/master/samples/WeatherListWidget/) sample
 
 [Introducing home screen widgets and the AppWidget framework](http://android-developers.blogspot.com/2009/04/introducing-home-screen-widgets-and.html)
+
+[android appwidget source code](https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/appwidget/)
+
+[android appwidget service source code](https://android.googlesource.com/platform/frameworks/base/+/master/services/java/com/android/server/AppWidgetService.java)
