@@ -1,0 +1,33 @@
+digraph G {
+    bgcolor=white;
+    pad=0.5;/* the spaces appended to the edge of the drawing */
+    ranksep="1.1 equally";
+    nodesep="1.0 equally";
+    //rankdir=LR;
+
+    node[shape="record"];
+
+    subgraph cluster_Thread1 {
+        color=black;
+        label="Thread1";
+        style=solid;
+        rankdir=TB;
+        event_base_new -> evthread_use_pthreads;
+        evthread_use_pthreads -> evthread_make_base_notifiable;
+        evthread_make_base_notifiable -> set_events_callbacks;
+        set_events_callbacks -> event_base_dispatch;
+        event_base_dispatch -> event_base_dispatch [label="Loop\nstimulus:\nfd, timeout, signal"];
+
+    }
+
+    subgraph cluster_Thread2 {
+        color=black;
+        label="Thread2";
+        style=solid;
+        rankdir=TB;
+        
+        event_active;
+        event_active -> event_base_dispatch [style=dotted];
+    }
+
+}
