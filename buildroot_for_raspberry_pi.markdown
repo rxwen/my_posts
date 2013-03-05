@@ -20,3 +20,6 @@ To build the target image, run commands below:
     cp configs/raspberry_simple_defconfig .config
     make
 
+After the build is finished. I just need to copy the output/build/linux-rpi-3.6.y/arch/arm/boot/Image to kernel.img on boot partition on the sd card, and untar output/images/rootfs.tar to root filesystem partition. 
+
+Power on, and now raspberry pi should be running our own system.
