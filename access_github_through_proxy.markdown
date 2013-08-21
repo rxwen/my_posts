@@ -1,4 +1,4 @@
-In China mainland, you never know for what reason a abroad website abroad gets blocked by the fucking [GFW](http://en.wikipedia.org/wiki/Golden_Shield_Project). Even if the site has nothing to do with politics.  [github](http://github.com) is a example, many developers in China are victims.  This post is about how to access github via a proxy, such as goagent.
+In China mainland, you never know for what reason a website gets blocked by the fucking [GFW](http://en.wikipedia.org/wiki/Golden_Shield_Project). Even if the site has nothing to do with politics.  [github](http://github.com) is a example, many developers in China are victims.  This post is about how to access github via a proxy, such as goagent.
 
 
 The git pull/push command can be instructed to access remote server via proxy by setting https_proxy environment variable. So, we can run commands below use proxy.
