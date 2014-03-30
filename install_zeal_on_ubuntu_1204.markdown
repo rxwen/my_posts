@@ -9,7 +9,7 @@
 The easy way to install zeal on Ubuntu is to [install from the PPA ](http://zealdocs.org/download.html). But we can't use this option, because zeal depends on Qt5, but we can't install Qt5 on system standard location to avoid confication with Qt4, which is used for our product development. So, we choose to install Qt5 in /opt directory and build zeal ourselves.
 
 
-A problem with build zeal is it requires c++11 support, which isn't supported by gcc v4.6. But we can't upgrade to newer version. So, we choose to use clang v3.3 (or newer version) to build zeal.
+A problem with build zeal is it requires c++11 support, which isn't supported by gcc v4.6. But we can't upgrade to newer version. So, we choose to use [clang v3.3 (or newer version)](http://clang.llvm.org/cxx_status.html) to build zeal.
 
 
 1. Download qt5 installer from https://qt-project.org/downloads and install to /opt
