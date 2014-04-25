@@ -15,7 +15,7 @@ A problem with build zeal is it requires c++11 support, which isn't supported by
 1. Download qt5 installer from https://qt-project.org/downloads and install to /opt
 2. Install required packages and clang: 
 
-        sudo apt-get install libgstreamer-plugins-base0.10-dev libxslt-dev libxml2-dev libxcb-keysyms1-dev bsdtar clang-3.3 libclang1-3.3
+        sudo apt-get install libgstreamer-plugins-base0.10-dev libxslt-dev libxml2-dev libxcb-keysyms1-dev libgl1-mesa-dev zlib1g-dev bsdtar clang-3.3 libclang1-3.3
 
 3. Download zeal source code: 
 
